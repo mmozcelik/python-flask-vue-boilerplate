@@ -37,7 +37,7 @@ class AccountWS(MethodView):
             captcha_result = Frequests.post(
                 'https://www.google.com/recaptcha/api/siteverify',
                 data={
-                    'secret': '6LfBwbkUAAAAAMGaa6IJ1ZqWFzmrFfpjHYfMAEBF',
+                    'secret': '???',
                     'response': form.captcha.data
                 }
             )
