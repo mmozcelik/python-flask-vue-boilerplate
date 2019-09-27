@@ -1,0 +1,9 @@
+Hi {{name}},
+
+In order to get your 50 free credits, could you kindly just confirm your email address by clicking on the link below :
+
+{{urlb}}
+
+Thank you for using us.
+
+Best regards

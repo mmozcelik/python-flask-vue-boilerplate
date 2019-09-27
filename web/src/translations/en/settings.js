@@ -1,0 +1,22 @@
+export default {
+    'account': 'Account',
+    'email': 'Your email',
+    'old_password': 'Old Password',
+    'password': 'Password',
+    'repassword': 'Re-password',
+    'old_password_placeholder': 'Type your current password to change it',
+    'password_placeholder': 'Type a new password',
+    'repassword_placeholder': 'Re-enter new password',
+    'update': 'Update',
+    'saved': 'Saved!',
+    'delete': 'Delete',
+    'successfully_updated': 'Successfully updated your account!',
+    'old_password_empty': 'To update your password, you need to fill your current password!',
+    'old_password_invalid': 'Your current password is incorrect, please retry to enter it!',
+    'new_password_empty': 'New password cant be empty',
+    'passwords_dont_match': 'Passwords does not match, please reenter your new password!',
+    'failed_update_password': 'Failed to update password',
+    'failed_updated': 'Failed to update your account!',
+    'successfully_deleted': 'Your account is successfully deleted, we are sorry to see you go!',
+    'failed_deleted': 'There was a problem during deletion of your account please contact support!'
+}

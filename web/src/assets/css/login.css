@@ -1,0 +1,268 @@
+#app-navigation {
+    z-index: 9990 !important;
+}
+
+/***************
+****************
+***************/
+
+#app .auth-wrapper h5 {
+    font-size: 16px;
+}
+
+#app .auth-wrapper > .auth-container {
+    height: 100%;
+    background: #f9f9f9;
+    position: absolute;
+    left: 50%;
+    margin-left: -275px;
+    width: 550px;
+    text-align: center;
+    padding: 35px 65px 45px;
+}
+
+#app .app-auth {
+    background: white;
+}
+
+#app .app-auth .vue-alert {
+    margin: 0 auto;
+    top: 100px;
+    right: 0;
+    left: 0;
+}
+
+#app .auth-wrapper {
+    min-height: calc(100% - 323px);
+    position: relative;
+}
+
+#app .auth-wrapper > div.login {
+    top: 40%;
+}
+
+#app .auth-wrapper > div h1 {
+    color: #4B68AF;
+    font-size: 2.15em;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#app .auth-wrapper .lost h1,
+#app .auth-wrapper .logout h1 {
+    margin-bottom: 5px;
+}
+
+#app .auth-wrapper > div p {
+    text-align: center;
+    font-size: 13px;
+    color: black;
+}
+
+#app .auth-wrapper > div a:hover {
+    color: #4B68AF;
+    font-weight: bold;
+}
+
+#app .auth-wrapper > div form {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    position: relative;
+}
+
+#app .auth-wrapper > div span {
+    width: 100%;
+}
+
+#app .auth-wrapper > div svg {
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: slategray;
+}
+
+#app .auth-wrapper > div input {
+    width: 100%;
+    border-radius: 3px;
+    font-size: 17px;
+    height: 45px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+#app .auth-wrapper > div input.error {
+    border: 1px solid #DA2D2D;
+    color: #CA0C0C;
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.08);
+}
+
+#app .auth-wrapper > div input[type="submit"] {
+    box-shadow: none;
+    color: #fff;
+    background: #449039;
+    border: none;
+    padding: 0;
+    text-transform: none;
+    letter-spacing: none;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-family: "brandon-grotesque", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+#app .auth-wrapper > div input[type="submit"]:hover {
+    background: #4BB53C;
+}
+
+#app .auth-wrapper > div a {
+    text-decoration: none;
+    color: #4B68AF;
+    font-size: 15px;
+}
+
+#app .auth-wrapper > div a.button-twitter {
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    display: inline-block;
+    clear: both;
+    border: none;
+    text-transform: none;
+    font-weight: normal !important;
+    text-indent: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    background: rgb(245, 245, 245);
+    border-radius: 3px;
+}
+
+#app .auth-wrapper > div a.button-twitter svg {
+    width: 20px;
+    position: absolute;
+    margin-left: -25px;
+}
+
+#app .auth-wrapper > div a.button-twitter svg path {
+    fill: #AAA;
+}
+
+#app .auth-wrapper > div a.button-twitter:hover {
+    color: #fff;
+    background: deepskyblue;
+}
+
+#app .auth-wrapper > div a.button-twitter:hover svg path {
+    fill: #fff;
+}
+
+#app .auth-wrapper .create > div a.button-twitter {
+    margin-top: 0;
+}
+
+#app .auth-wrapper .create form {
+    margin-bottom: 0;
+}
+
+#app-header,
+#app .auth-wrapper > div,
+#app-header .user-dropdown,
+#app-header.state-unauth .user-dropdown,
+#app-header .credits,
+#app-header.state-unauth .credits {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+#app .auth-wrapper > div a.button-twitter svg path,
+#app .auth-wrapper > div a.button-twitter {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+#app .auth-wrapper .non-human-panel {
+    display: inline-block;
+}
+
+#app .auth-wrapper .non-human-panel .u-pull-left {
+    width: 25%;
+}
+
+#app .auth-wrapper .non-human-panel .u-pull-left img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#app .auth-wrapper .non-human-panel .u-pull-right {
+    width: 70%;
+}
+
+#app .auth-wrapper .non-human-panel .u-pull-right img {
+    width: 60%;
+}
+
+#app .auth-wrapper .non-human-panel .g-recaptcha {
+    width: 100%;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+#app .auth-wrapper .non-human-panel .g-recaptcha > div {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 450px) {
+    #app .auth-wrapper > div {
+        padding: 30px 20px 40px 20px;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    #app-header.state-unauth {
+        position: relative;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-height: 900px) {
+    .auth-wrapper {
+        height: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    #rc-imageselect {
+        transform: scale(0.77);
+        -webkit-transform: scale(0.77);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
+
+    .non-human-panel .u-pull-left {
+        display: none;
+    }
+
+    #app .auth-wrapper .non-human-panel .u-pull-right {
+        width: 100%;
+        float: initial;
+    }
+
+    #app .auth-wrapper > .auth-container {
+        padding: 35px 15px 45px;
+        width: initial;
+        margin-left: 0px;
+        left: initial;
+    }
+}

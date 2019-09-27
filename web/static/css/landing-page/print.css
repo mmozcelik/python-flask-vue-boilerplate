@@ -1,0 +1,37 @@
+@media print {
+    .print-visible {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    td.print-visible,
+    th.print-visible {
+        display: table-cell !important;
+    }
+
+    .print-invisible,
+    th.print-invisible {
+        display: none !important;
+    }
+
+    .common_information,
+    footer {
+        display: none;
+    }
+
+    .tab-pane {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    .print-block { display: none; }
+
+    .panel-default {
+        border: none;
+    }
+
+    #livechat-compact-container,
+    #livechat-full {
+        display: none;
+    }
+}

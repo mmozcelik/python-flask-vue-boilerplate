@@ -1,0 +1,339 @@
+.animation-box {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.animation-box img { vertical-align: top; }
+
+/* howitworks-1 */
+@keyframes a-hiw-1_cursor {
+    0% {
+        left: -30px;
+    }
+    100% {
+        left: 110px;
+    }
+}
+@keyframes a-hiw-1_button {
+    0%, 96% {
+        background: transparent;
+        color: #333;
+    }
+    98% {
+        background: #333;
+    }
+    100% {
+        background: #5cb85c;
+    }
+}
+.a-hiw-1 {
+    width: 137px;
+    height: 176px;
+    margin: 0 auto;
+}
+.a-hiw-1 .a-hiw-1_cursor {
+    position: absolute;
+    top: 130px;
+    left: 110px;
+    z-index: 2;
+}
+.a-hiw-1 .a-hiw-1_button {
+    position: absolute;
+    top: 113px;
+    left: 25px;
+    width: 106px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 8px;
+    background: #5cb85c;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.a-hiw-1:hover .a-hiw-1_cursor {
+    animation-name: a-hiw-1_cursor;
+    animation-duration: 2s;
+}
+.a-hiw-1:hover .a-hiw-1_button {
+    animation-name: a-hiw-1_button;
+    animation-duration: 2s;
+}
+
+/* howitworks-2 */
+@keyframes a-hiw-2_arrow {
+    0% {
+        transform: rotate(-150deg);
+    }
+    100% {
+        transform: rotate(30deg);
+    }
+}
+@keyframes a-hiw-2_label {
+    0% {
+        color: #2754e6;
+    }
+    100% {
+        color: #ff3b3b;
+    }
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(1px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(1px, 0, 0);
+    }
+}
+.a-hiw-2 {
+    width: 136px;
+    height: 105px;
+    margin: 0 auto;
+}
+.a-hiw-2 .a-hiw-2_arrow {
+    position: absolute;
+    top: 65px;
+    left: 56px;
+    transform-origin: 15% 72%;
+    transform: rotate(30deg);
+    z-index: 2;
+}
+.a-hiw-2 .a-hiw-2_label {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    line-height: 20px;
+    color: #ff3b3b;
+    font-weight: 600;
+    z-index: 1;
+}
+.a-hiw-2:hover {
+    animation-name: shake;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+.a-hiw-2:hover .a-hiw-2_arrow {
+    animation-name: a-hiw-2_arrow;
+    animation-duration: 2s;
+}
+.a-hiw-2:hover .a-hiw-2_label {
+    animation-name: a-hiw-2_label;
+    animation-duration: 2s;
+}
+
+/* howitworks-3 */
+@keyframes a-hiw-3_doc {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 8px;
+    }
+}
+.a-hiw-3 {
+    width: 127px;
+    height: 121px;
+    margin: 0 auto;
+}
+.a-hiw-3 .a-hiw-3_cart {
+    position: relative;
+    z-index: 1;
+}
+.a-hiw-3 .a-hiw-3_doc {
+    position: absolute;
+    top: 8px;
+    left: 36px;
+    z-index: 0;
+}
+.a-hiw-3:hover .a-hiw-3_doc {
+    animation-name: a-hiw-3_doc;
+    animation-duration: 2s;
+}
+
+/* howitworks-4 */
+@keyframes a-hiw-4_ping {
+    0% {
+        top: -78px;
+    }
+    100% {
+        top: 78px;
+    }
+}
+@keyframes a-hiw-4_light {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.a-hiw-4 {
+    width: 171px;
+    height: 132px;
+    margin: 0 auto;
+}
+.a-hiw-4 .a-hiw-4_ping {
+    position: absolute;
+    top: 78px;
+    left: 0;
+}
+.a-hiw-4 .a-hiw-4_light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.a-hiw-4:hover .a-hiw-4_ping {
+    animation-name: a-hiw-4_ping;
+    animation-duration: 1s;
+}
+.a-hiw-4:hover .a-hiw-4_light {
+    animation-name: a-hiw-4_light;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+/* howitworks-5 */
+@keyframes a-hiw-5_coins {
+    0% {
+        top: -70px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+.a-hiw-5 {
+    width: 128px;
+    height: 126px;
+    margin: 0 auto;
+}
+.a-hiw-5 .a-hiw-5_coins {
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.a-hiw-5:hover .a-hiw-5_coins {
+    animation-name: a-hiw-5_coins;
+    animation-duration: 1s;
+}
+
+/* howitworks-6 */
+@keyframes a-hiw-6_money {
+    0% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.a-hiw-6 {
+    width: 118px;
+    height: 124px;
+    margin: 0 auto;
+}
+.a-hiw-6 .a-hiw-6_wallet {
+    position: relative;
+    z-index: 2;
+}
+.a-hiw-6 .a-hiw-6_money {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    transform-origin: 100% 100%;
+}
+.a-hiw-6:hover .a-hiw-6_money {
+    animation-name: a-hiw-6_money;
+    animation-duration: 1s;
+}
+
+/* affiliate-1 */
+@keyframes a-aff-1_cursor {
+    0% {
+        left: -30px;
+    }
+    100% {
+        left: 125px;
+    }
+}
+@keyframes a-aff-1_button {
+    0%, 96% {
+        background: transparent;
+        color: #333;
+    }
+    98% {
+        background: #333;
+    }
+    100% {
+        background: #5cb85c;
+    }
+}
+.a-aff-1 {
+    width: 183px;
+    height: 140px;
+    margin: 0 auto;
+}
+.a-aff-1 .a-aff-1_cursor {
+    position: absolute;
+    top: 119px;
+    left: 125px;
+    z-index: 2;
+}
+.a-aff-1 .a-aff-1_button {
+    position: absolute;
+    top: 101px;
+    left: 42px;
+    width: 97px;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 4px;
+    background: #5cb85c;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.a-aff-1:hover .a-aff-1_cursor {
+    animation-name: a-aff-1_cursor;
+    animation-duration: 2s;
+}
+.a-aff-1:hover .a-aff-1_button {
+    animation-name: a-aff-1_button;
+    animation-duration: 2s;
+}
+
+/* affiliate-2 */
+@keyframes a-aff-2_banner {
+    0% {
+        top: 100px;
+        right: 100px;
+    }
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+.a-aff-2 {
+    width: 139px;
+    height: 125px;
+    margin: 0 auto;
+}
+.a-aff-2 .a-aff-2_banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+.a-aff-2:hover .a-aff-2_banner {
+    animation-name: a-aff-2_banner;
+    animation-duration: 2s;
+}

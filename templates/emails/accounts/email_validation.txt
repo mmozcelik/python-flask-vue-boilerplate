@@ -1,0 +1,11 @@
+Hi {{account}},
+
+In order to be able to send email as {{email}}, you first need to certify you really own this email.
+
+Please copy paste the following code confirmation in the application to confirm you own this email :
+
+{{token}}
+
+Thank you for using us.
+
+Best regards

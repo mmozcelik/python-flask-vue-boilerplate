@@ -1,0 +1,239 @@
+#app-navigation {
+    position: relative;
+    left: 0;
+    text-align: center;
+    bottom: 0;
+    z-index: 99 !important;
+    flex: 1 1 240px;
+    box-sizing: border-box;
+    max-width: 240px;
+    min-width: 240px;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+#app-navigation .container {
+    width: 240px;
+    border: none;
+    height: 100%;
+    padding: 42px 32px;
+    background-color: #f2f2fa;
+    font-size: 15px;
+    line-height: 17px;
+    flex-direction: column;
+    box-sizing: border-box;
+    display: block;
+    place-content: flex-start space-between;
+    align-items: flex-start;
+}
+
+.nav-content {
+    display: flex;
+    text-align: left;
+}
+
+#app-navigation .logo {
+    position: relative;
+}
+
+#app-navigation .logo > img {
+    width: 100%;
+}
+
+#app-navigation .button-success {
+    padding: 9px 30px;
+    margin-top: 30px;
+}
+
+.nav-content {
+    margin-top: 20px;
+}
+
+.nav-content .top li:first-child {
+    margin-bottom: 15px;
+}
+
+#app-navigation .nav-content .top li.active i,
+#app-navigation .nav-content .top li.active a {
+    color: #364fcc;
+    font-weight: bold;
+}
+
+.nav-content .top,
+.nav-content .bottom {
+    width: 100%;
+}
+
+.nav-content li {
+    padding-top: 20px;
+}
+
+.nav-content li a {
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 17px;
+    margin: 0px;
+}
+
+.nav-content li > a > i {
+    margin-right: 20px;
+}
+
+#app-navigation .nav-content li:hover a,
+#app-navigation .nav-content li:hover i {
+    color: #54a9f4;
+}
+
+#app-navigation .nav-content li i,
+#app-navigation .nav-content li a,
+#app-navigation li.menu {
+    cursor: pointer;
+    transition: color .25s ease-in-out;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #8e8ea8;
+    outline: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -ms-word-break: break-all;
+    word-wrap: break-word;
+}
+
+#app-navigation li div {
+    margin-top: 6px;
+}
+
+.with-hello-bar #app-navigation {
+    top: 120px;
+}
+
+#app-navigation > ul > li {
+    list-style-type: none;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: #757B8D;
+    font-family: "brandon-grotesque", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #181825;
+    overflow: hidden;
+    height: 76px;
+    padding: 0;
+}
+
+#app-navigation ul.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+#app-navigation ul ul {
+    display: block;
+    margin: 0;
+    border-bottom: none;
+    font-size: 12px;
+    margin-top: 0;
+    border-top: 1px solid rgb(16, 16, 23);
+}
+
+#app-navigation ul ul li {
+    margin-bottom: 0;
+    height: auto !important;
+}
+
+#app-navigation ul ul li a {
+    display: block;
+    margin: 0;
+    height: auto;
+    text-transform: none;
+    font-family: "proxima-nova-alt", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(16, 16, 23);
+    box-shadow: inset 0 1px 0px rgba(71, 71, 101, 0.4);
+}
+
+#app-navigation ul ul li:last-child a {
+    border: none;
+}
+
+#app-navigation ul ul li a {
+    color: #757B8D !important;
+    text-decoration: none;
+}
+
+#app-navigation ul li a,
+#app-navigation ul li,
+#app-navigation ul ul,
+#app-navigation > ul > li .svg-icon path {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+    #app-navigation {
+        z-index: 99999 !important;
+        width: 25%;
+        top: 50px !important;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #app-navigation ul {
+        margin-bottom: 0px;
+    }
+
+    #app-navigation ul li {
+        width: 100%;
+        float: left;
+        cursor: pointer;
+        height: 60px;
+        border-right: 1px solid #181825;
+        box-shadow: inset -1px -1px 0 #474765;
+    }
+
+    #app-navigation ul.bottom li {
+        height: 40px;
+    }
+
+    #app-navigation > ul > li .svg-icon {
+        width: 20px;
+        height: 20px;
+        margin: 0 7px 0 0;
+        display: inline;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #app-navigation {
+        width: 30%;
+    }
+
+    #app-navigation ul li {
+        font-size: 9px;
+    }
+
+    #app-navigation ul li a {
+        padding: 8px 0;
+        height: 72px;
+    }
+
+    #app-navigation > ul > li .svg-icon {
+        width: 15px;
+        display: block;
+        margin: 0 auto;
+    }
+}

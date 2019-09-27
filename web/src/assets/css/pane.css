@@ -1,0 +1,392 @@
+#app-pane {
+    width: 30%;
+    background: #F7F5F3;
+    position: fixed;
+    right: -30%;
+    -webkit-transition: all .25s ease-in;
+    -moz-transition: all .25s ease-in;
+    -o-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    top: 60px;
+    bottom: 0;
+    border-left: 1px solid #CAC2BB;
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.09);
+    padding: 20px;
+    overflow: hidden;
+    font-size: 13px;
+}
+.with-hello-bar #app-pane {
+    top: 120px;
+}
+#app-pane header a {
+    color:#000;
+    opacity: 0.5;
+    font-size: 11px;
+    cursor: pointer;
+}
+.app-pane-header-sub {background:#fff;min-height:310px;}
+#app-pane .n-margin {
+    margin: 0 -20px;
+    padding: 20px;
+}
+body .pane-open #app-pane {
+    right: 0px;
+}
+#app-pane h3 {
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "brandon-grotesque", sans-serif;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    margin-top:30px;
+}
+
+/*******/
+
+.user-infos {
+    min-height:230px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#app-pane .app-pane-header {
+    background: #fff;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+    padding: 13px 20px 0 20px;
+}
+
+#app-pane {padding:0;}
+
+#app-pane .info-display {
+    padding:20px;
+    position:absolute;
+    top:0;
+    width:100%;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+#app-pane .info-display {
+    transform: translateX(0px);
+    min-height: 100%;
+}
+
+#app-pane .btn-delete .svg-icon {
+    width: 13px;
+    height: 13px;
+    fill:#E25D67;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#app-pane .btn-delete span {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+#app-pane .btn-delete {
+    text-decoration:none;
+    padding: 2px 0;
+    font-size:11px;
+    width: auto;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#app-pane .btn-delete:hover {
+    opacity: 1;
+}
+
+#app-pane .btn-delete>span {
+    color: #E25D67;
+}
+
+
+.user-infos .u-pull-right {
+    margin-left: 10px;
+}
+.user-infos .user-avatar {
+    border-radius: 100%;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+.user-infos .user-name {
+    display: block;
+    font-size: 15px;
+}
+
+.user-infos .user-company, .user-infos .user-location {
+    opacity: 0.5;
+    font-size: 12px;
+}
+.user-infos .user-email {
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.user-email-icon {
+    background: #fff;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-top: 13px;
+    font-size: 12px;
+    color: #ABABAB;
+    transition: all .2s ease-in;
+    border: 1px solid #eee;
+}
+
+.user-email-icon svg {
+    fill:#aaa;
+    width:20px;
+    vertical-align: middle;
+    transition: all .2s ease-in;
+}
+
+.user-email-icon:hover {
+    background:#449039;
+    border:1px solid #449039;
+    color:#fff;
+}
+
+.user-email-icon:hover svg {
+    fill:#fff;
+}
+
+.user-email-copy {
+    background: #fff;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+    border: 1px solid #eee;
+    text-decoration: none;
+    margin-top: -1px;
+    font-size: 12px;
+    color: #ABABAB;
+    transition: all .2s ease-in;
+}
+
+.user-infos ul {
+    margin: 0;
+    padding: 0;
+}
+.user-infos li {
+    display: inline-block;
+    margin: 10px 0 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+/*******/
+.user-progress .up-bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #eee;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 5px;
+}
+.user-progress .up-bar:after {
+    content: "";
+    display: block;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    background: #449039;
+    height: 3px;
+    border-radius: 5px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.user-progress .up-bar.lost:after {
+    background: #449039;
+    background: -moz-linear-gradient(left, #449039 0%, #449039 51%, #efa55f 75%, #e20f0f 91%);
+    background: -webkit-linear-gradient(left, #449039 0%, #449039 51%, #efa55f 75%, #e20f0f 91%);
+    background: linear-gradient(to right, #449039 0%, #449039 51%, #efa55f 75%, #e20f0f 91%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#449039', endColorstr='#e20f0f', GradientType=1);
+}
+.user-progress .up-bar.up-state1:after {
+    width: 33%;
+}
+.user-progress .up-bar.up-state2:after {
+    width: 66%;
+}
+.user-progress .up-bar.up-state3:after {
+    width: 100%;
+}
+.user-progress a {
+    margin-top: -10px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 33.33333333%;
+    float: left;
+    font-family: "brandon-grotesque", sans-serif;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 9px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.user-progress a.lost {
+    color: red!important;
+}
+.user-progress a.active {
+    color: #449039;
+}
+.user-progress a:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 200%;
+    background: rgba(95, 190, 82, 0.15);
+    top: 2px;
+    opacity: 0;
+    right: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.user-progress a#up-1:before {
+    display: none;
+}
+.user-progress a:hover:before {
+    opacity: 1;
+}
+
+/*******/
+
+.company-infos {
+    clear: both;
+    position: relative;
+    display: block;
+    background: #fff;
+}
+.company-infos .company-infos-wrapper img {
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+}
+.company-name {
+    margin-right: 5px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+.company-location {
+    font-size: 10px;
+    opacity: 0.7;
+}
+.company-desc {
+    display: block;
+    font-size: 11px;
+    opacity: 0.5;
+    line-height: 15px;
+    /*width: 200px;
+    white-space: nowrap;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.company-desc p {
+    margin-bottom:0;
+}
+.company-infos a, .company-infos a:hover, .company-infos a:active {
+  color:#000;
+  text-decoration:none;
+}
+.company-infos ul.social-networks {
+    float: none;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 50px;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+.company-infos ul.social-networks li {
+    float: right;
+    margin-left: 5px;
+}
+.company-infos ul.social-networks li a {
+    display: block;
+    width: 18px;
+}
+
+.social-networks li a img {
+    opacity:0.35;
+    width: 20px;
+    height: 20px;
+}
+.social-networks li a:hover img {
+    opacity:0.7;
+}
+
+.company-map img {
+    width: calc( 100% + 40px );
+    height: auto;
+    margin:25px -20px -46px -20px;
+}
+
+.company-info-data {
+    margin-bottom:0;
+}
+
+address {font-style:normal;}
+
+.tel strong {
+    font-size: 11px;
+    color: #7D7D7D;
+}
+
+.tel a {
+    float:right;
+}
+
+@media screen and (max-width: 800px) {
+    body .pane-open .app-body-listing {
+        width:60%;
+    }
+    body #app-pane {
+        width:40%;
+        right:-40%;
+    }
+}
+@media screen and (max-width: 560px) {
+    body #app-pane {
+        width: 100%;
+        right: -100%;
+        min-width:0;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+    body .app-body-listing,
+    body .pane-open .app-body-listing {
+        left: 0;
+        width:100%;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+    body .pane-open .app-body-listing  {
+        left: -100%!important;
+    }
+}

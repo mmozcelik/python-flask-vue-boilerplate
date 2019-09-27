@@ -1,0 +1,66 @@
+.popper {
+    position: absolute;
+    background: #ec8787;
+    color: #551313;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    width: 275px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(236, 135, 135, 0.54);
+    padding: 10px!important;
+    text-align: center;
+    z-index:999999;
+}
+.popper .popper__arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+    padding:0!important;
+}
+.popper[x-placement^="top"] {
+    margin-top: -8px;
+}
+.popper[x-placement^="top"] .popper__arrow {
+    border-width: 5px 5px 0 5px!important;
+    border-color: #ec8787 transparent transparent transparent !important;
+    bottom: -5px;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.popper[x-placement^="bottom"] {
+    margin-top: 8px;
+}
+.popper[x-placement^="bottom"] .popper__arrow {
+    border-width: 0 5px 5px 5px !important;
+    border-color: transparent transparent #ec8787 transparent !important;
+    top: -5px;
+    left: calc(50% - 5px);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.popper[x-placement^="right"] {
+    margin-left: 5px;
+}
+.popper[x-placement^="right"] .popper__arrow {
+    border-width: 5px 5px 5px 0 !important;
+    border-color: transparent #ec8787 transparent transparent !important;
+    left: -5px;
+    top: calc(50% - 5px);
+    margin-left: 0;
+    margin-right: 0;
+}
+.popper[x-placement^="left"] {
+    margin-right: 5px;
+}
+.popper[x-placement^="left"] .popper__arrow {
+    border-width: 5px 0 5px 5px !important;
+    border-color: transparent transparent transparent #ec8787 !important;
+    right: -5px;
+    top: calc(50% - 5px);
+    margin-left: 0;
+    margin-right: 0;
+}

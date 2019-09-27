@@ -1,0 +1,9 @@
+Hello {{account}},
+
+Very nice to meet you. I am almost ready to serve you. Could you kindly just confirm your email address by clicking on the link below :
+
+{{urlb}}
+
+Thank you for using my services! You rock!
+
+Best regards

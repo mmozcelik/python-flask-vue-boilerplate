@@ -1,0 +1,11 @@
+Hi {{name}},
+
+You (or someone else) requested a one time logging url.
+
+Simply click on the following link and you will be automatically logged in:
+
+{{urlb}}
+
+Thank you and see you soon!
+
+Yours truly

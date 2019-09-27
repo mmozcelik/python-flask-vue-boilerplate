@@ -1,0 +1,321 @@
+#app-header.with-hello-bar:not(.state-unauth) {
+    top: 50px;
+}
+
+#app-header {
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-bottom: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    border-bottom: 1px solid #dedeec;
+    font-weight: bold;
+    font-size: 14px;
+    height: 50px;
+    color: #7B7B7B;
+    border-left: 1px solid #eee;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none;
+}
+
+#app-header #logo img {
+    height: 45px;
+    margin-top: 2px;
+}
+
+#app-header .navbar-brand {
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.mobile-menu-button {
+    color: black;
+    z-index: 100000;
+    padding: 14px;
+    width: 50px;
+    height: inherit;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #app-header .coin-info {
+        display: none;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    #app-header #logo img {
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+}
+
+.user-dropdown {
+    cursor: pointer;
+}
+
+.user-dropdown ul {
+    display: none;
+    z-index: 9999;
+    background: white;
+    position: fixed;
+    top: 59px;
+    width: 200px;
+    right: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+}
+
+.user-dropdown ul:after, .user-dropdown ul:before {
+    bottom: 100%;
+    right: 20px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.user-dropdown ul:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #fff;
+    border-width: 7px;
+    margin-left: -7px;
+}
+
+.user-dropdown ul:before {
+    border-color: rgba(245, 16, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 1);
+    border-width: 7px;
+    margin-left: -7px;
+}
+
+.user-dropdown ul li {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+
+.dropdown-opened ul {
+    display: block;
+}
+
+.user-dropdown ul li a {
+    display: block;
+    text-decoration: none;
+    color: #868686;
+    width: 100%;
+    padding: 12px 20px;
+    position: relative;
+    clear: both;
+    float: none;
+    border-bottom: 1px solid #DEDEDE;
+    font-weight: lighter;
+}
+
+.user-dropdown ul li:last-child a {
+    background: #F7F5F3;
+}
+
+#app-header #logo {
+    left: 50%;
+    margin: 0 auto;
+    margin-left: -310px;
+    display: block;
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    #app-header {
+        position: absolute;
+    }
+
+    #app-header .navbar-brand {
+        padding: 0px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #app-header #logo {
+        margin-left: -180px;
+    }
+}
+
+#app {
+    text-align: center;
+    margin: 0 auto;
+    width: 30px;
+    height: 60px;
+    float: none;
+}
+
+/* Making the eyes moves from right to left */
+
+.eye {
+    animation: eyes-search 3s infinite;
+}
+
+@-webkit-keyframes eyes-search {
+    0% {
+        transform: translate(0, 0);
+    }
+    33.3333333333% {
+        transform: translate(4px, 0);
+    }
+    66.6666666666% {
+        transform: translate(-4px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes eyes-search {
+    0% {
+        transform: translate(0, 0);
+    }
+    33.3333333333% {
+        transform: translate(4px, 0);
+    }
+    66.6666666666% {
+        transform: translate(-4px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes eyes-search {
+    0% {
+        transform: translate(0, 0);
+    }
+    33.3333333333% {
+        transform: translate(4px, 0);
+    }
+    66.6666666666% {
+        transform: translate(-4px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Making the eyebrows up and down */
+
+.eyebrows {
+    animation: eyebrows-search 3s infinite;
+}
+
+@-webkit-keyframes eyebrows-search {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, -4px);
+    }
+    30% {
+        transform: translate(0, -4px);
+    }
+    35% {
+        transform: translate(0, 0px);
+    }
+    35% {
+        transform: translate(0, 0);
+    }
+    40% {
+        transform: translate(0, -4px);
+    }
+    45% {
+        transform: translate(0, -4px);
+    }
+    50% {
+        transform: translate(0, 0px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@-moz-keyframes eyebrows-search {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, -4px);
+    }
+    30% {
+        transform: translate(0, -4px);
+    }
+    35% {
+        transform: translate(0, 0px);
+    }
+    35% {
+        transform: translate(0, 0);
+    }
+    40% {
+        transform: translate(0, -4px);
+    }
+    45% {
+        transform: translate(0, -4px);
+    }
+    50% {
+        transform: translate(0, 0px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes eyebrows-search {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, -4px);
+    }
+    30% {
+        transform: translate(0, -4px);
+    }
+    35% {
+        transform: translate(0, 0px);
+    }
+    35% {
+        transform: translate(0, 0);
+    }
+    40% {
+        transform: translate(0, -4px);
+    }
+    45% {
+        transform: translate(0, -4px);
+    }
+    50% {
+        transform: translate(0, 0px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

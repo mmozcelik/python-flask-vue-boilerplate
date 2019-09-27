@@ -1,0 +1,6 @@
+.idea
+venv
+node_modules
+app/static
+app/templates
+*.log

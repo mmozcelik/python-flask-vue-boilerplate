@@ -1,0 +1,1281 @@
+.modal {
+    background: -webkit-radial-gradient(50% 50%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.625) 100%);
+    background: -moz-radial-gradient(50% 50%, ellipse closest-corner, rgba(0, 0, 0, 0.3) 1%, rgba(0, 0, 0, 0.625) 100%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.modal-content,
+.modal-content input {
+    position: relative;
+}
+
+.modal.modal-visible {
+    opacity: 1;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: visible;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.modal-dialog, .modal.modal-visible .modal-dialog {
+    opacity: 0;
+    visibility: hidden;
+    width: 770px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -310px;
+    margin-top: -300px;
+    text-align: center;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.modal.modal-visible .modal-dialog.is-visible {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-fullscreen .modal-dialog {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    bottom: 20px;
+    left: 170px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.modal-dialog .modal-content {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    background: #fff;
+    border-radius: 5px;
+    z-index: 9999;
+    position: relative;
+    -webkit-box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 100%;
+}
+
+.modal.has-pane-variables .modal-dialog {
+    transform: translateX(-75px);
+}
+
+.modal-variables {
+    z-index: 9998;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateX(0);
+    width: 150px;
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    height: 100%;
+    font-size: 0.8em;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid rgb(82, 80, 78);
+    border-radius: 0 5px 5px 0;
+    background: rgba(103, 100, 98, 0.98);
+}
+
+.modal-variables li {
+    margin-bottom: 25px;
+}
+
+.modal-variables li a {
+    text-decoration: none;
+
+}
+
+.modal-variables li a span {
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-weight: regular;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.modal-variables li > span {
+    display: block;
+    color: rgb(208, 198, 189);
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: .9em;
+}
+
+.modal.has-pane-variables .modal-variables {
+    opacity: 1;
+    transform: translateX(145px);
+}
+
+.modal-header .close {
+    position: absolute;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: block;
+    padding-left: 1px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 25px;
+    border: 2px solid #000;
+    top: 14px;
+    right: 13px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.modal-header {
+    background: #F7F5F3;
+    padding: 30px 20px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #E2DEDA;
+    overflow: hidden;
+    height: 90px;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.modal h4 {
+    color: #4B68AF;
+    font-size: 25px;
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.modal h4 span sub {
+    bottom: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.modal h3 {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: #979695;
+    margin-bottom: 0;
+}
+
+.modal form {
+    margin-bottom: 0;
+}
+
+.modal form input,
+.modal form select,
+.modal form textarea,
+.modal form .readonly {
+    background: none;
+    height: 44px;
+    width: calc(100% - 140px);
+    border-radius: 0;
+    float: right;
+    font-size: 13px;
+    outline: none;
+    margin-bottom: 0;
+    border: none;
+}
+
+.modal form .readonly {
+    height: initial;
+    padding: 0px 10px;
+}
+
+.modal form input:focus,
+.modal form select:focus,
+.modal form textarea:focus {
+    outline: none;
+    border: none;
+    box-shadow: none !important;
+}
+
+.modal form .opt-group {
+    padding: 0 20px;
+    clear: both;
+    float: none;
+    border-bottom: 1px solid #E2DEDA;
+}
+
+.modal form .opt-select select {
+    padding: 0;
+    width: calc(100% - 97px);
+    border-radius: 0;
+    float: right;
+}
+
+.modal form .opt-group.n-margin {
+    padding: 0;
+    border-bottom: none;
+}
+
+.modal form .opt-group:after {
+    content: "";
+    position: relative;
+    display: block;
+    clear: both;
+    float: none;
+}
+
+.modal form textarea {
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+    height: 250px;
+    border-radius: 0 0 5px 0;
+}
+
+.modal label,
+.modal {
+    color: #888;
+}
+
+.modal form label {
+    text-align: left;
+    float: left;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #888;
+}
+
+.modal-email-send .opt-group input {
+    padding-left: 0 !important;
+}
+
+.modal-footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 80px;
+    border-radius: 0 0 5px 5px;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 17%, rgba(255, 255, 255, 1) 52%, rgba(255, 255, 255, 1) 66%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 17%, rgba(255, 255, 255, 1) 52%, rgba(255, 255, 255, 1) 66%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 17%, rgba(255, 255, 255, 1) 52%, rgba(255, 255, 255, 1) 66%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1affffff', endColorstr='#ffffff', GradientType=0);
+}
+
+.modal .btn-fake {
+    background: #449039;
+    margin: 0;
+    position: absolute;
+    bottom: 12px;
+    right: 13px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    min-width: 0;
+    color: #fff;
+    width: auto;
+    padding: 0;
+    border-radius: 3px;
+    height: 35px;
+    line-height: 10px;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.btn-add {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.modal .btn-fake input {
+    top: 0;
+    left: 0;
+    width: auto;
+    color: white;
+    height: 34px;
+    padding: 0 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    line-height: 16px;
+}
+
+.modal .btn-fake .spinner {
+    margin-top: 13px;
+}
+
+.modal .btn-fake:hover,
+.modal .btn-fake:active,
+.modal .btn-fake:focus {
+    color: #fff;
+}
+
+.modal-actions {
+    position: absolute;
+    left: 45px;
+    bottom: 20px;
+}
+
+.attachments {
+    margin-left: -25px;
+    clear: both;
+    float: none;
+    position: absolute;
+    width: 600px;
+    bottom: 30px;
+    height: 30px;
+    right: 0;
+    left: 0;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.attachments li {
+    float: left;
+    margin-right: 7px;
+    background: #E6E6E5;
+    font-weight: bold;
+    padding: 5px;
+    font-size: .8em;
+    border-radius: 3px;
+    color: #7B746D;
+}
+
+.attachments li a {
+    float: right;
+    margin-right: 0;
+    font-size: 10px;
+    font-weight: bold;
+    display: block;
+    border: 1px solid #B7B7B7;
+    width: 16px;
+    margin-left: 7px;
+    border-radius: 100%;
+    background: white;
+    opacity: 1;
+    height: 16px;
+    color: #7B746D;
+    margin-top: 2px;
+    position: relative;
+}
+
+.attachments li a:hover {
+    background: red;
+    color: #fff;
+    border: 1px solid red;
+}
+
+.button-attachment {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+}
+
+.button-csv {
+    height: auto !important;
+    width: auto !important;
+    position: relative;
+}
+
+.button-csv input {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    height: auto !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.button-csv button {
+    margin-bottom: 0 !important;
+}
+
+.button-csv a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button-csv a .svg-icon {
+    fill: #fff;
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.button-attachment button {
+    border: none;
+    padding: 0;
+    text-transform: none;
+    font-weight: normal;
+    background: none;
+    font-size: 13px;
+    font-family: "proxima-nova-alt", sans-serif;
+    cursor: pointer;
+}
+
+.button-attachment .svg-icon {
+    top: 10px;
+}
+
+.button-attachment input {
+    position: absolute;
+    left: -25px;
+    width: 100px;
+    bottom: 0;
+    cursor: pointer;
+    opacity: 0;
+    height: 25px !important;
+    padding: 0 !important;
+}
+
+.button-attachment:hover a {
+    opacity: 0.7;
+}
+
+.modal-actions a {
+    position: relative;
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-actions a:hover {
+    opacity: 0.7;
+}
+
+.modal-actions svg {
+    width: 18px;
+    position: absolute;
+    left: -23px;
+}
+
+.sent {
+    padding: 5px;
+    float: left;
+}
+
+.sent .svg-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.sent .svg-icon path {
+    fill: #fff;
+}
+
+.modal.is-sent .btn-fake input {
+    padding: 0 20px 0 0;
+}
+
+.modal.is-sent .modal-header {
+    background: #EDFFED;
+    border-bottom: 1px solid #B0D8B0;
+}
+
+.modal.is-sent .modal-header h4 {
+    color: #449039;
+}
+
+.modal.is-sent .modal-header h4.modal-title-default {
+    transform: translateY(-40px);
+    opacity: 0;
+}
+
+.modal .modal-header h4.modal-title-success {
+    transform: translateY(40px);
+    opacity: 0;
+}
+
+.modal.is-sent .modal-header h4.modal-title-success {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.modal form input[disabled], .modal form select[disabled], .modal form textarea[disabled] {
+    color: #123;
+}
+
+body.has-payment-modal #app-body {
+    z-index: 10000;
+}
+
+body.has-payment-modal .credits {
+    display: none;
+}
+
+body.has-payment-modal .modal-fullscreen .previous-button {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 15px;
+    border-right: 1px solid #EEEEEE;
+    color: grey;
+    text-decoration: none;
+}
+
+body.has-payment-modal .modal-fullscreen .previous-button .svg-icon {
+    display: inline;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 3px;
+    opacity: 0.7;
+}
+
+.modal.modal-fullscreen {
+    background: none;
+}
+
+.modal.modal-fullscreen .modal-content {
+    overflow-y: scroll;
+}
+
+.modal.modal-fullscreen .modal-dialog {
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    height: 100%;
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-header {
+    height: auto;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-header h4 {
+    display: none;
+}
+
+.modal.modal-fullscreen .modal-dialog .modal-content {
+    border-radius: 0;
+    height: 100%;
+    border: none;
+    background: #F7F5F3;
+}
+
+.modal-fullscreen .modal-body .tab-content > div {
+    padding-bottom: 50px;
+}
+
+.modal-fullscreen .plans {
+    margin: 60px auto 40px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-fullscreen .plans li {
+    width: 23%;
+    float: left;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #ffffff;
+    margin-left: 1.5%;
+    height: 235px;
+    transition: .2s all ease-in-out;
+}
+
+.modal-fullscreen .is-yearly .plans li {
+    height: 255px;
+}
+
+.modal-fullscreen .plans li input {
+    display: none;
+}
+
+.modal-fullscreen .plans li.prepaid {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.modal-fullscreen .plans li.plan-selected {
+    border: 1px solid #E48436;
+    box-shadow: 0 26px 40px -24px rgb(212, 189, 166);
+}
+
+.modal-fullscreen .need-more {
+    margin-top: 20px;
+}
+
+.modal-fullscreen .need-more, .modal-fullscreen .need-more a {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-fullscreen .plans li p {
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.modal-fullscreen h4.lead-title {
+    margin-top: 50px;
+    font-size: 35px;
+    position: relative;
+}
+
+.modal-fullscreen .plans li h4 {
+    position: relative;
+}
+
+.modal-fullscreen .switch-time a {
+    font-size: 12px;
+}
+
+.modal-fullscreen .switch-time li {
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.modal-fullscreen .switch-time li a {
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    padding: 7px 9px;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 3px;
+    background: none;
+    border: 2px solid #c3c3c3;
+    color: #c3c3c3;
+    cursor: pointer;
+}
+
+.modal-fullscreen .switch-time li span {
+    font-weight: lighter;
+}
+
+.modal-fullscreen .switch-time li:hover a {
+    border: 2px solid #E48436;
+    color: #E48436;
+}
+
+.modal-fullscreen .switch-time li.active:hover a {
+    color: #fff;
+}
+
+.modal-fullscreen .switch-time li.active a {
+    background: #E48436;
+    border: 2px solid #E48436;
+    color: #fff;
+}
+
+.modal-fullscreen .switch-time li.monthly a {
+    border-radius: 3px 0 0 3px;
+    border-right: 0;
+}
+
+.modal-fullscreen .switch-time li.yearly a {
+    border-radius: 0 3px 3px 0;
+    border-left: 0;
+}
+
+.modal-fullscreen .lead-price {
+    color: rgba(0, 0, 0, 0.55);
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.modal-fullscreen .price, .modal-fullscreen .price-yearly {
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+    font-weight: lighter;
+    color: #4B68AF;
+}
+
+.modal-fullscreen .prepaid .price, .modal-fullscreen .prepaid .price-yearly {
+    font-size: 13px;
+    font-weight: normal;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    color: #333;
+    background: none;
+}
+
+.modal-fullscreen li.active .price, .modal-fullscreen li.active .price-yearly {
+    font-size: 13px;
+    font-weight: normal;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    color: #333;
+    background: none;
+}
+
+.modal-fullscreen .price-yearly, .modal-fullscreen .is-yearly .price {
+    display: none;
+}
+
+.modal-fullscreen .is-yearly .price-yearly {
+    display: block;
+}
+
+.modal-fullscreen .is-yearly .price-yearly .old, .modal-fullscreen .is-yearly .price-yearly .new {
+    display: inline;
+}
+
+.modal-fullscreen .is-yearly .price-yearly .old {
+    font-size: 15px;
+    opacity: 0.7;
+}
+
+.modal-fullscreen .is-yearly .price-yearly .save {
+    display: block;
+}
+
+.modal-fullscreen .is-yearly .price-yearly .save span {
+    color: #449039;
+    background: rgb(222, 245, 219);
+    padding: 7px 10px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-left: -21px;
+    margin-right: -21px;
+    display: block;
+    margin-top: 9px;
+}
+
+.modal-fullscreen .is-yearly .prepaid .price {
+    display: block;
+}
+
+.modal-fullscreen form, .modal-fullscreen .upsell {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    background: #fff;
+}
+
+.modal-fullscreen .upsell {
+    padding: 20px;
+    border: 1px solid rgb(95, 190, 82);
+    text-align: left;
+    background: rgba(95, 190, 82, 0.09);
+    text-align: center;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -40px;
+}
+
+.modal-fullscreen .upsell ul {
+    float: right;
+}
+
+.modal-fullscreen .upsell p {
+    color: #449039;
+    display: inline;
+    font-size: 13px;
+}
+
+.modal-fullscreen form div, .modal-fullscreen form .btn {
+    clear: both;
+    float: none;
+}
+
+.modal-fullscreen form .btn {
+    background: #449039;
+    height: 38px;
+    padding: 0 30px;
+    font-size: 10px;
+    width: 100%;
+    padding: 4px 3px 3px 3px;
+    height: auto;
+    border-radius: 0 0 3px 3px;
+    margin-top: -1px;
+}
+
+.modal-fullscreen form input {
+    float: none;
+}
+
+.modal-fullscreen form div {
+    border-bottom: 1px solid #EFE8E8;
+    padding: 0 15px;
+    position: relative;
+}
+
+.modal-fullscreen form label {
+    width: 60px;
+}
+
+.modal-fullscreen form .svg-icon {
+    fill: #449039;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.modal-fullscreen form input.btn {
+    background: #449039;
+    height: 38px;
+    padding: 0 30px !important;
+    border: none !important;
+    font-size: 1px;
+    border-radius: 0 0 3px 3px !important;
+    margin-top: 20px;
+}
+
+.modal-fullscreen .organization form input.btn {
+    margin-top: -1px;
+}
+
+.modal-fullscreen .plans li .plan-feature {
+    color: rgba(0, 0, 0, 0.35) !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    margin-top: 5px !important;
+}
+
+.modal-fullscreen .plans li .plan-feature.team-members {
+    margin-top: 15px !important;
+}
+
+.modal-fullscreen .plan-feature strong {
+    font-weight: normal;
+}
+
+.modal-fullscreen .plan-feature .svg-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    fill: rgba(0, 0, 0, 0.35);
+}
+
+.modal-fullscreen .success .svg-icon {
+    width: 64px;
+    height: 64px;
+    margin-top: 60px;
+    margin-bottom: -40px;
+    fill: #449039;
+}
+
+.modal-stats .message {
+    padding: 20px;
+    text-align: left;
+    height: 230px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #E2DEDA;
+    background: rgba(247, 245, 243, 0.27);
+    color: #8E8E8E;
+    font-size: 13px;
+}
+
+.modal-stats .stats ul {
+    height: 70px;
+    margin: 0;
+    padding: 14px 0;
+}
+
+.modal-stats .stats ul li strong {
+    text-transform: uppercase;
+    font-family: brandon-grotesque;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #A5A4A3;
+}
+
+.modal-stats .stats ul li span {
+    display: block;
+    font-size: 13px;
+    margin-top: -3px;
+    color: #A5A4A3;
+}
+
+.modal-settings .tab-content {
+    padding: 30px;
+    text-align: left;
+    height: 498px;
+}
+
+.modal .modal-header {
+    float:left;
+    border-bottom:none;
+    padding:0;
+    border-right:1px solid #E2DFDC;
+    border-radius:5px 0 0 5px;
+    width:20%;
+    overflow:visible;
+}
+
+.modal .modal-header ul li {
+    margin-bottom:0;
+    float: initial;
+}
+
+.modal .modal-header ul li a {
+    text-decoration: none;
+    color: #827F7D;
+    display: block;
+    padding: 13px 20px;
+    border-bottom: 1px solid #D8D8D8;
+    position:relative;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.modal .modal-header .svg-icon {
+     width: 21px;
+     height:21px;
+     display: inline-block;
+     fill: #827F7D;
+     display: block;
+     margin: 0 auto;
+ }
+.modal .modal-body {
+    position: initial;
+    padding-left: 20%;
+}
+.modal .modal-body .tab-content {
+    padding: 0px 30px;
+    text-align:left;
+}
+
+.modal .modal-header {
+    height: 100%;
+}
+
+@media screen and (max-height: 500px) {
+    .modal-dialog {
+        top: 0;
+        margin-top: 0;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+        position: absolute;
+        overflow-y: scroll;
+    }
+
+    .modal-footer {
+        position: relative;
+    }
+
+    .modal form textarea {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .modal .modal-dialog,
+    .modal.modal-visible .modal-dialog {
+        width: 100%;
+        left: 0;
+        margin: 0;
+        top: 50px;
+        margin: 0px;
+        border: none;
+        border-radius: 0;
+        position: absolute;
+        height: calc(100vh - 56px) !important;
+    }
+
+    .modal form input,
+    .modal form select,
+    .modal form .opt-select select {
+        width: calc(100% - 125px);
+        font-size: 11px;
+    }
+
+    .modal form label {
+        font-size: 12px;
+        width: 125px;
+    }
+
+    .modal form textarea {
+        width: 100%;
+    }
+
+    .modal .modal-content {
+        height: initial;
+    }
+
+    .modal .modal-header {
+        height: initial;
+        float: initial;
+        width: initial;
+    }
+
+    .modal .modal-header .nav-tabs {
+        display: flex;
+    }
+
+    .modal .modal-header ul li a {
+        padding: 8px 0px;
+        min-width: 60px;
+        height: 52px;
+        font-size: 8px;
+    }
+
+    .modal .modal-body {
+        padding: 0px;
+    }
+
+    .modal .modal-body .tab-content {
+        padding: 0px 10px;
+    }
+
+    .modal .close {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .modal .modal-dialog {
+        width: 1000px;
+        height: 800px;
+        margin-top: -400px;
+        margin-left: -500px;
+        transform: translateX(-75px) !important;
+    }
+
+    .modal.modal-fullscreen .modal-dialog {
+        height: 100Vh !important;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        transform: translateX(0) !important;
+    }
+
+    .modal.has-pane-variables .modal-variables {
+        opacity: 1;
+        transform: translateX(0px) !important;
+    }
+
+    .modal form textarea {
+        height: 545px;
+    }
+
+    .modal .modal-variables {
+        opacity: 1;
+        transform: translateX(145px);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translate(0px, 50px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+        -moz-transform: translate(0px, 50px);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translate(0px, 0px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(0px, 50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.fade-in {
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in-out 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in-out 1;
+    animation: fadeIn ease-in-out 1;
+
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-duration: 0.6s;
+    -moz-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+
+    -webkit-transform: translate(0px, 0px);
+    position: relative;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 0.15s;
+    -moz-animation-delay: 0.15s;
+    animation-delay: 0.15s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.fade-in.four {
+    -webkit-animation-delay: 0.45s;
+    -moz-animation-delay: 0.45s;
+    animation-delay: 0.45s;
+}
+
+.fade-in.five {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.fade-in.six {
+    -webkit-animation-delay: 0.75s;
+    -moz-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.fade-in.seven {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.fade-in.eight {
+    -webkit-animation-delay: 1.15s;
+    -moz-animation-delay: 1.15s;
+    animation-delay: 1.15s;
+}
+
+@keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}
+
+.swing {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@keyframe pop {
+0% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+}
+100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+}
+}
+
+.fx-1, .fx-2, .fx-3, .fx-4, .fx-5, .fx-6, .fx-7, .fx-8 {
+    animation: pop 5s ease-in-out infinite alternate;
+}
+
+.last-column {
+    padding-right: 0 !important;
+}
